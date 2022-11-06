@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody - Download and Browse latest songs</title>
+
+    <!-- * external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- * external script -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- overlays -->
+    <div class="overlay" id="overlay"></div>
+    <div class="register--overlay" id="register-overlay">
+        <img class="close-form" id="close-register-form" src="./img/close.svg" alt="close form">
+        <h2>Get Started</h2>
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="lg-email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="lg-password">
+        </div>
+        <button class="cta--primary" type="submit">
+            Register
+            <img src="./img/arrow.png" alt="submit form">
+        </button>
+        <a class="cta--secondary" id="login-here" href="#">Already Registered? Login here</a>
+    </div>
+    <div class="login--overlay" id="login-overlay">
+        <img class="close-form" id="close-login-form" src="./img/close.svg" alt="close form">
+        <h2>Welcome Back,</h2>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="reg-email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="reg-password">
+        </div>
+        <button class="cta--primary" type="submit">
+            Login
+            <img src="./img/arrow.png" alt="submit form">
+        </button>
+        <a class="cta--secondary" id="register-here" href="#">New? Register Here</a>
+    </div>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <nav class="navbar">
+                <div class="brand">
+                    <img class="brand-logo" src="./img/logo.png" alt="Melody">
+                    <p class="brand-name">Melody</p>
+                </div>
+                <ul class="navlinks">
+                    <li class="navlink">
+                        <a class="anchor__link" href="#home">Home</a>
+                    </li>
+                    <li class="navlink">
+                        <a class="anchor__link" href="#features">Features</a>
+                    </li>
+                    <li class="navlink">
+                        <a class="anchor__link" href="#operations">Operations</a>
+                    </li>
+                    <li class="navlink">
+                        <a class="anchor__link" href="#testimonials">Testimonials</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-cta">
+                    <a class="cta--secondary" id="open-login-form" href="#">Login</a>
+                    <a class="cta--primary" id="open-register-form" href="#">Register</a>
+                </div>
+            </nav>
+            <main class="main">
+                <div class="main--left">
+                    <div class="main--heading">
+                        <h2 class="primary--heading">Songs in a click of a button</h2>
+                        <p class="secondary--heading">download & browse latest songs</p>
+                    </div>
+                    <div class="main--cta">
+                        <a href="#" id="try-for-free" class="main-cta cta--primary">
+                            Try for free
+                            <img class="main-cta--arrow" src="./img/arrow.png" alt="try">
+                        </a>
+                    </div>
+                </div>
+                <div class="main--right">
+                    <img class="main-image" src="./img/header.png" alt="girl listening song">
+                </div>
+            </main>
+        </div>
+    </header>
+
+    <!-- features section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="features--heading">Features</h2>
+            <div class="feature">
+                <div class="left">
+                    <img 
+                    src="./img/feature-1_lazy.png" 
+                    data-src="./img/feature-1.png"
+                    alt="multiple device support"
+                    class="feature_image lazy-img"
+                    >
+                </div>
+                <div class="right">
+                    <img src="./img/multiple-device-support.png" alt="computer, tablet and phone">
+                    <h4>Multiple Devices Support</h4>
+                    <p>
+                        Runs on web, making it possible to access your favourite songs from anywhere. Our web platform is
+                        very mobile friendly to ensure unforgottable experience.
+                    </p>
+                </div>
+            </div>
+            <div class="feature feature-mid">
+                <div class="left">
+                    <img 
+                    src="./img/feature-2_lazy.png" 
+                    data-src="./img/feature-2.png"
+                    alt="multiple device support"
+                    class="feature_image lazy-img"
+                    >
+                </div>
+                <div class="right">
+                    <img src="./img/single-click-download.png" alt="computer, tablet and phone">
+                    <h4>Single Click Download</h4>
+                    <p>
+                        Download songs from the available songs in a single click. No payment, No credits, 100% Free.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="left">
+                    <img 
+                    src="./img/feature-3_lazy.png" 
+                    data-src="./img/feature-3.png"
+                    alt="multiple device support"
+                    class="feature_image lazy-img"
+                    >
+                </div>
+                <div class="right">
+                    <img src="./img/browse-unlimited-library.png" alt="computer, tablet and phone">
+                    <h4>Browse unlimited library of Songs</h4>
+                    <p>
+                        Browse a almost unlimited library of songs released at any point of time using Youtube Music API.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- operations section -->
+    <section class="operations" id="operations">
+        <div class="container">
+            <h2 class="operations--heading">Operations</h2>
+            <div class="operation">
+                <ul class="tabs-container">
+                    <li class="active operation-link tab" data-tab="1">1. Login</li>
+                    <li class="operation-link tab tab-2" data-tab="2">2. Favourite</li>
+                    <li class="operation-link tab tab-3" data-tab="3">3. Download</li>
+                </ul>
+                <div class="operation--text-container tab-content--1">
+                    <div class="left">
+                        <img src="./img/operation-login.png" alt="step 1">
+                    </div>
+                    <div class="right">
+                        <p>
+                            Login or Register to your account and follow the on screen instructions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="operation--text-container tab-content--2 hidden">
+                    <div class="left">
+                        <img src="./img/operation-favourites.png" alt="step 2">
+                    </div>
+                    <div class="right">
+                        <p>
+                            Add your songs to favourite list and download later.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="operation--text-container tab-content--3 hidden">
+                    <div class="left">
+                        <img src="./img/operation-download.png" alt="step 3">
+                    </div>
+                    <div class="right">
+                        <p>
+                            Download your favourite Songs on a click of a button directly to your device.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="testimonials--heading">Testimonials</h2>
+
+            <div class="testimonials-container">
+                <img class="left-arrow" src="/img/arrow_left.png" alt="go left">
+                <img class="right-arrow" src="/img/arrow_right.png" alt="go right">
+
+                <div class="dots-container">
+                    <!-- <span class="dots active"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span> -->
+                </div>
+                <!-- Testimonial 1 -->
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <div class="testimonial--text">
+                            <p>
+                                Probably the best music app used so far. so easy and intutive to use.
+                
+                                <p class="author-name">
+                                    -Sofia
+                                </p>
+                            </p>
+                        </div>
+                        <div class="testimonial--author">
+                            <img src="./img/testimonial-author-1.png" alt="person">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <div class="testimonial--text">
+                            <p>
+                                Best Service to download songs on the internet.
+                
+                                <p class="author-name">
+                                    -Mark
+                                </p>
+                            </p>
+                        </div>
+                        <div class="testimonial--author">
+                            <img src="./img/testimonial-author-2.png" alt="person">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <div class="testimonial--text">
+                            <p>
+                                Never going back again to any other website.
+                
+                                <p class="author-name">
+                                    -Jack
+                                </p>
+                            </p>
+                        </div>
+                        <div class="testimonial--author">
+                            <img src="./img/testimonial-author-3.png" alt="person">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- try section -->
+    <section class="try">
+        <div class="container">
+            <div class="try-container">
+                <h2>Still Thinking? Give it a try by opening your free account today.</h2>
+                <button class="cta--primary">
+                    open a free account
+                    <img src="./img/arrow.png" alt="open a free account">
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-links">
+                    <ul>
+                        <li class="navlink">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="navlink">
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brand-logo">
+                    <img src="./img/logo.png" alt="Melody">
+                    <h2>Melody</h2>
+                </div>
+                <div class="footer-about">
+                    <p>© 2022, Copyright by Gaurav Rawat</p>
+                    <div class="footer-socials">
+                        <a href="#twitter">
+                            <img src="./img/footer-twitter.png" alt="twitter link of Gaurav Rawat">
+                        </a>
+                        <a href="#github">
+                            <img src="./img/footer-github.png" alt="github link of Gaurav Rawat">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
